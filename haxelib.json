@@ -1,0 +1,12 @@
+{
+	"name": "SaveNotDrip",
+	"url" : "https://github.com/TilNotDrip/SaveNotDrip/",
+	"license": "MIT",
+	"tags": ["save", "ini"],
+	"description": "A save system for Haxe using a modified ini stucture.",
+	"version": "0.1.0",
+	"releasenote": "First Alpha release!",
+	"contributors": ["TechnikTil", "CrusherNotDrip"],
+	"classPath": "src",
+	"dependencies": {}
+}

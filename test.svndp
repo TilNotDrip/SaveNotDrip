@@ -1,0 +1,8 @@
+veryStringy="yeah, "very""
+someBool=true
+coolFloat=0.6
+swagArray=[0,true,"a"]
+goTypedef={
+  funnyNumbers=[69,420,7]
+  info="maps copy this"
+}

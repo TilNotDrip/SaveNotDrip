@@ -1,0 +1,6 @@
+--class-path extras/testing/testing
+-main ParseTest
+-lib utest
+-cp src
+-cpp extras/testing/build/windows/
+-cmd (cd extras/testing/build/windows/ && ParseTest)
