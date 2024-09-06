@@ -12,6 +12,8 @@ jobs:
         uses: krdlab/setup-haxe@master
         with:
           haxe-version: latest
+      - name: Install Haxe Libraries
+        run: haxelib install utest
       - name: Compile The Test
         run: |
           cd ${{ github.workspace }}
