@@ -3,4 +3,9 @@
 -lib utest
 -cp src
 -cpp extras/testing/build/windows/
+--next
+--class-path extras/testing/testing
+-main ParseTest
+-lib utest
+-cp src
 -js extras/testing/build/javascript/
