@@ -14,8 +14,8 @@ jobs:
           haxe-version: latest
       - name: Install Haxe Libraries
         run: |
-          haxelib install utest -q
-          haxelib install hxcpp -q
+          haxelib install utest --quiet
+          haxelib install hxcpp --quiet
       - name: Compile The Test
         run: |
           cd ${{ github.workspace }}
