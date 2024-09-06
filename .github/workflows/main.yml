@@ -4,7 +4,7 @@ on: [ push, pull_request ]
     
 jobs:
   Windows:
-    name: Windows/CPP
+    name: Compiling Tests
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
@@ -13,8 +13,20 @@ jobs:
         with:
           haxe-version: latest
       - name: Install Haxe Libraries
-        run: haxelib install utest
+        run: |
+          haxelib install utest
+          haxelib install hxcpp
       - name: Compile The Test
         run: |
           cd ${{ github.workspace }}
           haxe test.hxml
+      - name: Upload Windows/CPP Executable
+        uses: actions/upload-artifact@v4
+        with:
+          name: WindowsakaCPP
+          path: ${{ github.workspace }}/extras/testing/build/windows/
+      - name: Upload html5/js file
+        uses: actions/upload-artifact@v4
+        with:
+          name: HTML5akaJS
+          path: ${{ github.workspace }}/extras/testing/build/javascript/

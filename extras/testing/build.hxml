@@ -3,4 +3,4 @@
 -lib utest
 -cp src
 -cpp extras/testing/build/windows/
--cmd (cd extras/testing/build/windows/ && ParseTest)
+-js extras/testing/build/javascript/
